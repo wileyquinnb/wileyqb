@@ -1,0 +1,176 @@
+
+/* RIGHT SCROLLER CLASSES */
+
+.scrollerRight {
+    z-index: 5;
+    position: fixed;
+    right: 0vw;
+    width: 35%;
+    height: 100vh;
+    margin-right: 10vw;
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    animation: appearBottom .4s ease-in-out;
+}
+
+.scrollerRightFade {
+    z-index: 5;
+    position: fixed;
+    right: 0vw;
+    width: 35%;
+    height: 100vh;
+    margin-right: 10vw;
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    animation: fadeIn .6s ease-in-out;
+}
+
+.scrollerRight::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollerRightColored {
+    position: fixed;
+    right: 0vw;
+    width: 35%;
+    height: 100vh;
+    margin-right: 10vw;
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollerRightColored::-webkit-scrollbar {
+    display: none;
+}
+
+/* LEFT SCROLLER CLASSES */
+
+.scrollerLeft {
+    z-index: 5;
+    position: fixed;
+    left: 0vw;
+    width: 35%;
+    height: 100vh;
+    margin-left: 10vw;
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    animation: appearBottom .4s ease-in-out;
+}
+
+.scrollerLeftFade {
+    z-index: 5;
+    position: fixed;
+    left: 0vw;
+    width: 35%;
+    height: 100vh;
+    margin-left: 10vw;
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    animation: fadeIn .6s ease-in-out;
+}
+
+.scrollerLeft::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollerLeftColored {
+    position: fixed;
+    left: 0vw;
+    width: 35%;
+    height: 100vh;
+    margin-left: 10vw;
+    overflow: auto;
+    -webkit-scroll-snap-type: y mandatory;
+        -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollerLeftColored::-webkit-scrollbar {
+    display: none;
+}
+
+/* UNIVERSAL SCROLLER CLASSES */
+
+.box {
+    scroll-snap-align: center;
+    display: flex;
+    color: white;
+    width: 28vw;
+    height: 28vw;
+    padding: 3vw;
+}
+
+.box > img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    box-shadow: 2px 1px 3px rgb(0 0 0 / .2);
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.boxColored {
+    scroll-snap-align: center;
+    display: flex;
+    color: white;
+    width: 28vw;
+    height: 28vw;
+    padding: 3vw;
+    transition: opacity 0.5s ease-out, transform .2s ease-in-out;
+}
+
+.boxColored > img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    box-shadow: 2px 1px 3px rgb(0 0 0 / .2);
+    cursor: pointer;
+    /* transition: opacity 0.5s ease-out, transform .2s ease-in-out; */
+}
+
+.boxColored:hover {
+    transform: scale(1.03);
+}
+
+/* .boxColored > img:hover {
+    transform: scale(1.03);
+} */
+
+.firstBox {
+    margin-top: calc(50vh - 14vw);
+}
+
+.lastBox {
+    margin-bottom: calc(50vh - 14vw);
+}
+
+@keyframes appearBottom {
+    0%{
+        transform: translateY(100vh);
+        opacity: .7;
+    }
+    100%{
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}

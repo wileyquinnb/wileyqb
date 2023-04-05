@@ -1,0 +1,52 @@
+.setZ {
+    z-index: 50;
+}
+
+.removeShadow {
+    box-shadow: none;
+}
+
+.expand {
+    animation: scale2 1.6s 1;
+    transition: ease-out;
+}
+
+@keyframes scale2 {
+    0%{
+        transform: scale(2.8);
+    }
+    80%{
+        transform: scale(30);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(35);
+        opacity: 1;
+    }
+}
+
+.shrink {
+    animation: shrink1 1s 1;
+    transition: ease-out;
+}
+
+@keyframes shrink1 {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.1);
+    }
+}
+
+.loading {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    padding: none;
+    margin: none;
+
+}

@@ -1,0 +1,28 @@
+
+.white {
+    background-color: white;
+}
+
+.whiteText {
+    color: white;
+}
+
+.yellow {
+    background-color: rgb(255, 183, 0);
+}
+
+.purple {
+    background-color: rgb(150, 52, 150);
+}
+
+.green {
+    background-color: rgb(25, 152, 80);
+}
+
+.red {
+    background-color: rgb(203, 54, 54);
+}
+
+.black {
+    background-color: #202020;
+}

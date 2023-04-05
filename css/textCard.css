@@ -1,0 +1,137 @@
+
+.cardBody {
+    height: 44%;
+    width: 78vw;
+    position: fixed;
+    top: 28vh;
+    left: 11vw;
+    background-color: white; 
+    box-shadow: 1px 1px 1px rgb(0 0 0 / .05);
+    opacity: 0%;
+}
+
+.cardShow {
+    opacity: 95%;
+    animation: sweep .4s ease-in-out;
+}
+
+.cardHide {
+    opacity: 0%;
+    animation: backsweep .4s ease-in-out;
+}
+
+.projectTitle {
+    width: 56%;
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7vh; /* 60px */
+    font-weight: bold;
+    animation: appear3 .2s ease-in-out;
+}
+
+.projectBody {
+    width: 56%;
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8vh; /* 20px */
+    color: rgb(50, 50, 50);
+    animation: appear3 .2s ease-in-out;
+}
+
+.projectTitleLeft {
+    margin-right: 2%;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7vh; /* 60px */
+    font-weight: bold;
+    animation: appear3 .2s ease-in-out;
+    width: 56%;
+}
+
+.projectBodyLeft {
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8vh; /* 20px */
+    color: rgb(50, 50, 50);
+    animation: appear3 .2s ease-in-out;
+    width: 56%;
+}
+
+.projectTitleWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.projectBodyWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+@keyframes sweep {
+    0%{
+        width: 0%;
+        opacity: 70%;
+    }
+    100%{
+        width: 78%;
+        opacity: 95%;
+    }
+}
+
+@keyframes backsweep {
+    0%{
+        width: 78%;
+        opacity: 95%;
+    }
+    100%{
+        width: 0%;
+        opacity: 50%;
+    }
+}
+
+/* LEFT CARD */
+
+.cardBodyLeft {
+    height: 44%;
+    width: 78vw;
+    position: fixed;
+    top: 28vh;
+    right: 11vw;
+    background-color: white; 
+    box-shadow: 1px 1px 1px rgb(0 0 0 / .05);
+    opacity: 0%;
+}
+
+.cardShowLeft {
+    opacity: 95%;
+    animation: sweepLeft .4s ease-in-out;
+}
+
+.cardHideLeft {
+    opacity: 0%;
+    animation: backsweepLeft .4s ease-in-out;
+}
+
+@keyframes sweepLeft {
+    0%{
+        width: 0%;
+        opacity: 70%;
+    }
+    100%{
+        width: 78%;
+        opacity: 95%;
+    }
+}
+
+@keyframes backsweepLeft {
+    0%{
+        width: 78%;
+        opacity: 95%;
+    }
+    100%{
+        width: 0%;
+        opacity: 50%;
+    }
+}

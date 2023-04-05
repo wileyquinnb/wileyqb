@@ -1,0 +1,118 @@
+
+/* --Master Circle-- */
+
+.circle {
+
+    position: fixed;
+    height: 30vh;
+    width: 30vh;
+    border-width: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 1vh rgb(0 0 0 / .15);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    animation: scale .5s 1;
+
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(0);
+    }
+    30%{
+        transform: scale(.0);
+    }
+    75%{
+        transform: scale(.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* --Master Container-- */
+
+.container {
+
+    position: fixed;
+    height: 70vh;
+    width: 70vh;
+    border-radius: 35%;
+
+}
+
+
+
+/* --Top Left Circle-- */
+
+.tlContainer {
+    left:-35vh;
+    top: -35vh;
+}
+
+.topLeft {
+    background-color: rgb(255, 183, 0);
+    left: -15vh;
+    top: -15vh;
+}
+
+.tlContainer:hover .topLeft {
+    transform: scale(2.8);
+}
+
+
+
+/* --Top Right Circle-- */
+
+.trContainer {
+    right:-35vh;
+    top: -35vh;
+}
+
+.topRight {
+    background-color: rgb(150, 52, 150);
+    right: -15vh;
+    top: -15vh; 
+}
+
+.trContainer:hover .topRight {
+    transform: scale(2.8);
+}
+
+
+
+/* --Bottom Left Circle-- */
+
+.blContainer {
+    left:-35vh;
+    bottom: -35vh;
+}
+
+.bottomLeft {
+    background-color: rgb(25, 152, 80);
+    left: -15vh;
+    bottom: -15vh;
+}
+
+.blContainer:hover .bottomLeft {
+    transform: scale(2.8);
+}
+
+
+
+/* --Bottom Right Circle-- */
+
+.brContainer {
+    right:-35vh;
+    bottom: -35vh;
+}
+
+.bottomRight {
+    background-color: rgb(203, 54, 54);
+    right:-15vh;
+    bottom: -15vh;
+}
+
+.brContainer:hover .bottomRight {
+    transform: scale(2.8);
+}
