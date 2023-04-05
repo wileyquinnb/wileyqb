@@ -89,6 +89,8 @@ function handleClick(event) {
         isAnimating = true;
         const value = event.target.getAttribute('data-value');
 
+        if (!value) throw new Error('Value does not exist');
+
         if (document.head.id == 'page3') {
             textCard.classList.add('cardShowLeft');
         } else {
