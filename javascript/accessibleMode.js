@@ -16,7 +16,8 @@ function getSettings() {
 	} catch (error) { }
 }
 
-
+getSettings();
+toggleAccessibility();
 
 if (aSwitch) {
 	aSwitch.addEventListener("click", () => {

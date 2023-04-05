@@ -16,7 +16,11 @@ const projectBodyWrapper = document.getElementById('projectBodyWrapper');
 let isAnimating = false;
 
 
+mainScroller.addEventListener('click', handleClick);
 
+for (let i = 0; i < images.length; i++) {
+    images[i].setAttribute('data-value', i);
+}
 
 
 async function loadProjectScroller(value) {
