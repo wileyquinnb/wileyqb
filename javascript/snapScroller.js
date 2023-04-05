@@ -85,30 +85,34 @@ async function loadProjectScroller(value) {
 function handleClick(event) {
     if (isAnimating) return;
 
-    if (event.target.tagName === 'IMG') {
-        isAnimating = true;
-        const value = event.target.getAttribute('data-value');
+    try {
+        if (event.target.tagName === 'IMG') {
+            isAnimating = true;
+            const value = event.target.getAttribute('data-value');
 
-        if (!value) throw new Error('Value does not exist');
+            if (!value) throw new Error('Value does not exist');
 
-        if (document.head.id == 'page3') {
-            textCard.classList.add('cardShowLeft');
-        } else {
-            textCard.classList.add('cardShow');
+            if (document.head.id == 'page3') {
+                textCard.classList.add('cardShowLeft');
+            } else {
+                textCard.classList.add('cardShow');
+            }
+
+            pageTitle.classList.add('hide');
+
+            loadProjectScroller(value);
+
+            images.forEach(image => {
+                image.classList.add('hide');
+            });
+
+            setTimeout(() => {
+                mainScroller.style.display = 'none';
+                isAnimating = false;
+            }, 400);
         }
-
-        pageTitle.classList.add('hide');
-
-        loadProjectScroller(value);
-
-        images.forEach(image => {
-            image.classList.add('hide');
-        });
-
-        setTimeout(() => {
-            mainScroller.style.display = 'none';
-            isAnimating = false;
-        }, 400);
+    } catch (error) {
+        console.error(error)
     }
 }
 
