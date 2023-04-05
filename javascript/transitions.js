@@ -13,6 +13,8 @@ anchors.forEach(anchor => {
 
         clickedButton = e.target;
 
+        if (!clickedButton) throw new Error('Failed to get button');
+
         newButton.classList = clickedButton.classList;
         newButton.classList.add('setZ');
         newButton.classList.add('expand');
