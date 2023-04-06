@@ -1,6 +1,6 @@
 .scroller {
     height: 64%;
-    width: 100%;
+    width: 104%;
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -16,6 +16,7 @@
 }
 
 .box {
+    overflow: visible;
     scroll-snap-align: center;
     display: flex;
     color: white;
