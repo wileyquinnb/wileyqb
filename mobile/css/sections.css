@@ -58,21 +58,25 @@
     margin-bottom: calc(50vh - 14vw);
 }
 
-.sectionTitle {
+.title {
     height: 30%;
     width: 80%;
     font-size: 6vh;
     margin: 5vh;
-    margin-left: 30vw;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     opacity: 95%;
     font-weight: bold;
     text-shadow: 2px 1px 3px rgb(0 0 0 / .2);
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     animation:appear .4s ease-in-out;
+}
+
+.titleSection {
+    margin-left: 30vw;
+    justify-content: left;
 }
 
 /* scroller has height of 64% */
