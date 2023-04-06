@@ -137,7 +137,7 @@
     width: 28vw;
     height: 28vw;
     padding: 3vw;
-    transition: opacity 0.5s ease-out, transform .2s ease-in-out;
+    /* transition: opacity 0.5s ease-out, transform .2s ease-in-out; */
 }
 
 .boxColored > img {
@@ -148,9 +148,9 @@
     /* transition: opacity 0.5s ease-out, transform .2s ease-in-out; */
 }
 
-.boxColored:hover {
+/* .boxColored:hover {
     transform: scale(1.03);
-}
+} */
 
 /* .boxColored > img:hover {
     transform: scale(1.03);

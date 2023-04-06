@@ -72,6 +72,21 @@
     background-image: linear-gradient(rgb(255, 183, 0), rgb(203, 54, 54));
 }
 
+#indicator2 {
+    height: 10%;
+    background-image: linear-gradient(rgb(203, 54, 54), rgb(150, 52, 150));
+}
+
+#indicator3 {
+    height: 10%;
+    background-image: linear-gradient(rgb(150, 52, 150), rgb(25, 152, 80));
+}
+
+#indicator4 {
+    height: 10%;
+    background-image: linear-gradient(rgb(25, 152, 80), rgb(255, 183, 0));
+}
+
 @keyframes appear {
     0%{
         transform: translateY(-60vh);
