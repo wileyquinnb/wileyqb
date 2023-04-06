@@ -74,13 +74,7 @@
     animation:appear .4s ease-in-out;
 }
 
-.scroller {
-    height: 64%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* scroller has height of 64% */
 
 .indicator {
     height: 6%;
@@ -116,6 +110,17 @@
     }
     100%{
         transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+@keyframes appearRight {
+    0%{
+        transform: translateX(50vh);
+        opacity: .7;
+    }
+    100%{
+        transform: translateX(0vh);
         opacity: 1;
     }
 }
