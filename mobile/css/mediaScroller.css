@@ -2,7 +2,7 @@
     height: 64%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     z-index: 5;
     position: relative;
@@ -32,3 +32,10 @@
     cursor: pointer;
 }
 
+.firstBox {
+    margin-left: calc(50vw - 15vw);
+}
+
+.lastBox {
+    margin-right: calc(50vw - 15vw);
+}
