@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
 }
   
 #sectionContainer {
@@ -13,6 +12,7 @@
             scroll-snap-type: y mandatory;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background-color: white;
 }
 
 #sectionContainer::-webkit-scrollbar {
@@ -21,34 +21,48 @@
 
 
 .section {
-    height: 100%;
+    height: calc(100% - 20vh);
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 6vh;
+    border-radius: 10vw;
+    box-shadow: 2px 1px 3px rgb(0 0 0 / .2);
+    scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     transition: background-color 0.5s ease-in-out;
 }
 
 #section1 {
     background-color: rgb(255, 183, 0);
+    display: flex;
+    margin-top: calc(50vh - 14vw);
 }
 
 #section2 {
     background-color: rgb(203, 54, 54);
+    display: flex;
 }
 
 #section3 {
     background-color: rgb(150, 52, 150);
+    display: flex;
 }
 
 #section4 {
     background-color:  rgb(25, 152, 80);
+    display: flex;
+    margin-bottom: calc(50vh - 14vw);
 }
 
 .sectionTitle {
     height: 30%;
+    width: 80%;
     font-size: 6vh;
+    margin: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     opacity: 95%;
@@ -61,36 +75,44 @@
 }
 
 .scroller {
-    height: 60%;
+    height: 64%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.indicator {
+    height: 6%;
+    width: 100%;
+    border-bottom-right-radius: 10vw;
+    border-bottom-left-radius: 10vw;
+}
+
 #indicator1 {
-    height: 10%;
+    opacity: 12%;
     background-image: linear-gradient(rgb(255, 183, 0), rgb(203, 54, 54));
 }
 
 #indicator2 {
-    height: 10%;
+    opacity: 25%;
     background-image: linear-gradient(rgb(203, 54, 54), rgb(150, 52, 150));
 }
 
 #indicator3 {
-    height: 10%;
+    opacity: 5%;
     background-image: linear-gradient(rgb(150, 52, 150), rgb(25, 152, 80));
 }
 
 #indicator4 {
-    height: 10%;
+    opacity: 0%;
     background-image: linear-gradient(rgb(25, 152, 80), rgb(255, 183, 0));
 }
 
 @keyframes appear {
     0%{
         transform: translateY(-60vh);
-        opacity: .7;
+        opacity: .1;
     }
     100%{
         transform: translateY(0vh);
